@@ -13,6 +13,26 @@
             font-variation-settings:
                 "wdth" 100;
         }
+        .top-link {
+            position: fixed;
+            top: 10px;
+            left:50%;
+            transform: translate(-50%);
+            z-index:1000;
+        }
+        .top-link a {
+            font-size: 20px;
+            font-weight:500;
+            color: #CF65F0;
+            text-decoration: none;
+        }
+        .top-link a:visited {
+            text-decoration: none;
+            color: #CF65F0;
+        }
+        .top-link a:hover {
+            color: #9549AB;
+        }
         h1 {  /* font specifics for h1 (left side)*/
             font-weight: 300;
             font-size: 50px; 
@@ -70,6 +90,9 @@
 </head>
 
 <body>
+    <div class="top-link">
+        <a href="index.html">Home</a>
+     </div>
     <div class="split left">
         <div class="centered">
            <h2>miscellaneous things...</h2>
