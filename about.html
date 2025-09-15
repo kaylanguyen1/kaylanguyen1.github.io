@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Archivo", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+        h1 {  /* font specifics for h1 (left side)*/
+            font-weight: 300;
+            font-size: 50px; 
+            color: #579DDE;
+          }
+          h2 { /* font specifics for h2 (right side) */
+            font-weight: 250;
+            font-size: 40px;
+            font-style: italic;
+            color: #F5AD38;
+            line-height: 2.5;
+          }
+          p {
+            font-weight: 200;
+            font-size: 80;
+            color: #D99930;
+          }
+          a:link { /* font style for links on right side */
+            text-decoration: none;
+            color: #81E0E6;
+          }
+          a:visited { /* no change to font once link visited */
+            text-decoration: none;
+            color: #81E0E6;
+          }
+          a:hover { /* when hovering over link, changes color */
+            color: #2C7D82;
+          }
+        .split { /* split screen */
+            height:100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+    
+        .left { /* left screen */
+            left: 0;
+            background-color: #D65D4B;
+        }
+    
+        .right { /* right screen */
+            right: 0;
+            background-color: #D63131;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="split left">
+        <div class="centered">
+            <img src="headshot.JPEG" alt="headshot">
+        </div>
+    </div>
+    <div class="split right">
+        <div class="centered">
+            <h2> About Kayla Nguyen</h2>
+            <p>Senior year student majoring in Computer Science and minoring in Economics. </p>
+            <p>Enjoys full-stack development.</p>
+            <p>Enjoys baking, traveling, reading, painting, watching movies, photography, and hanging out wtih dogs.</p>
+        </div>
+    </div>
+</body>
+
+</html>
