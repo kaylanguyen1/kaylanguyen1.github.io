@@ -13,6 +13,26 @@
             font-variation-settings:
                 "wdth" 100;
         }
+        .top-link {
+            position: fixed;
+            top: 10px;
+            left:50%;
+            transform: translate(-50%);
+            z-index:1000;
+        }
+        .top-link a {
+            font-size: 20px;
+            font-weight:500;
+            color: #F5AD38;
+            text-decoration: none;
+        }
+        .top-link a:visited {
+            text-decoration: none;
+            color: #F5AD38;
+        }
+        .top-link a:hover {
+            color: #D99930;
+        }
         h1 {  /* font specifics for h1 (left side)*/
             font-weight: 300;
             font-size: 50px; 
@@ -32,14 +52,14 @@
           }
           a:link { /* font style for links on right side */
             text-decoration: none;
-            color: #81E0E6;
+            color: #F5AD38;
           }
           a:visited { /* no change to font once link visited */
             text-decoration: none;
-            color: #81E0E6;
+            color: #F5AD38;
           }
           a:hover { /* when hovering over link, changes color */
-            color: #2C7D82;
+            color: #D99930;
           }
         .split { /* split screen */
             height:100%;
@@ -75,6 +95,9 @@
 </head>
 
 <body>
+    <div class="top-link">
+       <a href="index.html">Home</a>
+    </div>
     <div class="split left">
         <div class="centered">
             <img src="headshot.JPEG" alt="headshot">
